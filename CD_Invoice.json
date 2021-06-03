@@ -1,0 +1,227 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/FOILDP/CD_Invoice.json",
+    "title": "FOILDP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": false,
+    "definitions": {
+        "Invoice": {
+            "$id": "#Invoice",
+            "title": "Invoice",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "This is a Sample",
+                    "baclass": {
+                        "caDocTypeId": "b65d6596-71e0-4def-92e4-fc5e04ff4e66",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "Invoicenumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Invoice number",
+                                    "caKeyClassId": "468fdb54-445c-48ad-aede-6cf6584d7fbb",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Vendorname": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Vendor name",
+                                    "caKeyClassId": "741817b9-887d-4e1e-9807-77144df3b87c",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Vendoraddress": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Vendor address",
+                                    "caKeyClassId": "35fda00d-720d-4156-912e-4c85fdcf9543",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Vendorphonenumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Vendor phone number",
+                                    "caKeyClassId": "5e8ff6d9-c73f-4b2b-82fb-06ff8933918e",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Vendoremail": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Vendor email",
+                                    "caKeyClassId": "8b56699c-5cec-4a7a-acb7-ab5a9d785cd4",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Purchaseordernumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Purchase order number",
+                                    "caKeyClassId": "dd309398-57b3-487b-9a93-3c7a32c8350b",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Paymentterms": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Payment terms",
+                                    "caKeyClassId": "d9ca477a-2701-404f-97ef-7ee4e53d7e6e",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Invoicedate": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Invoice date",
+                                    "caKeyClassId": "fbef1729-35d0-444b-9c2e-bd0a8db14722",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Invoicetotal": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Invoice total",
+                                    "caKeyClassId": "241acf1c-48a9-4e01-bd1c-a2d990569447",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Paymentduedate": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Payment due date",
+                                    "caKeyClassId": "331aee00-834d-4d8e-a322-07dbcd892bb7",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Subtotal": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Subtotal",
+                                    "caKeyClassId": "94701716-eecd-4001-938a-22ffaa85be9f",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Shippingamount": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Shipping amount",
+                                    "caKeyClassId": "c264fe91-cb25-4182-b96b-f4c623d554bf",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Taxamount": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Tax amount",
+                                    "caKeyClassId": "8ee8ab36-2a19-4e50-a465-fbc9959f7aba",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Invoiceitemtable": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Invoice item table",
+                                    "caKeyClassId": "bb356f94-0846-45f4-ae36-fe6f32756b10",
+                                    "caValueType": "table",
+                                    "caComplexKeyMapping": {
+                                        "Main": {
+                                            "caKeyClassName": "Main",
+                                            "caKeyClassId": "7471e714-b73c-4ab0-bcd5-f0e2bc65a655",
+                                            "caComplexKeyMapping": {
+                                                "ItemID": {
+                                                    "caKeyClassName": "Item ID",
+                                                    "caKeyClassId": "330cba52-17df-496a-84bd-0189adfaf2a2"
+                                                },
+                                                "Itemprice": {
+                                                    "caKeyClassName": "Item price",
+                                                    "caKeyClassId": "45cfc27e-6f6f-444e-bf8a-e1c75ff54b83"
+                                                },
+                                                "Itemdescription": {
+                                                    "caKeyClassName": "Item description",
+                                                    "caKeyClassId": "20100061-048e-4bf9-8618-e16f7d736bc2"
+                                                },
+                                                "Itemamount": {
+                                                    "caKeyClassName": "Item amount",
+                                                    "caKeyClassId": "b1e8547d-d6fc-4f77-b6eb-cbee92fa20c2"
+                                                },
+                                                "Itemquantity": {
+                                                    "caKeyClassName": "Item quantity",
+                                                    "caKeyClassId": "4360bcad-4b07-4c2e-998d-311ddb95bb66"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

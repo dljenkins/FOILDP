@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/solutions/solution1/FOILDP/ProjectDefinition.json",
+    "title": "FOIL Document Processing",
+    "ba_description": "",
+    "ba_type": "content",
+    "ba_repoPrimaryKey": "FOILDP",
+    "ba_id": "f7c8213a-1e6b-4f2c-8813-ce5d470d97eb",
+    "ba_expectedDocTypes": 0,
+    "ba_dataDefinitions": [
+        {
+            "$ref": "proj://CDD/DD_12e95c1d-bbbc-4edc-a131-619400ee88f6_name.json",
+            "title": "name"
+        },
+        {
+            "$ref": "proj://CDD/DD_956ed890-6031-4071-b92f-cb9ee3e433d8_address.json",
+            "title": "address"
+        },
+        {
+            "$ref": "proj://CDD/DD_7698b38d-761c-4a00-80c4-3ffda643c7f5_city.json",
+            "title": "city"
+        },
+        {
+            "$ref": "proj://CDD/DD_5cb36cd1-832b-4ab3-902d-1ed3a56e2a92_State.json",
+            "title": "State"
+        },
+        {
+            "$ref": "proj://CDD/DD_05cc35e3-7d5a-4e18-9f76-cdd1bcfa0936_zip.json",
+            "title": "zip"
+        },
+        {
+            "$ref": "proj://CDD/DD_d9edc7c5-74ab-412e-8eef-c6d7baee705c_email.json",
+            "title": "email"
+        },
+        {
+            "$ref": "proj://CDD/DD_c449f6d9-ef77-4bca-9bc3-2a3f00a6554f_phoneNumber.json",
+            "title": "phoneNumber"
+        },
+        {
+            "$ref": "proj://CDD/DD_62770757-d8f6-46fd-9fc6-a9de842c6a4d_organization.json",
+            "title": "organization"
+        }
+    ],
+    "ba_contentDefinitions": [
+        {
+            "$ref": "CD_Invoice.json",
+            "title": "Invoice"
+        },
+        {
+            "$ref": "CD_FOIL.json",
+            "title": "FOIL"
+        }
+    ],
+    "ba_caDefinitions": "caDefinitions.json",
+    "ba_caProjectDescriptor": "12e6b7c3-a7fe-4297-9ad7-be58b15d5a30",
+    "ba_caMLModel": "MLmodel.zip",
+    "ba_snapshotName": "v2-2021-05-06-1450",
+    "ba_versionId": "b2e8791f-d968-432d-8389-739f542b748a"
+}

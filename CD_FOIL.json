@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/undefined/FOIL.json",
+    "title": "FOIL",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "",
+    "description": "",
+    "baForDeployment": true,
+    "definitions": {
+        "FOIL": {
+            "$id": "#FOIL",
+            "title": "FOIL",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "b4b6a497-5bf9-4c4c-ad09-2215e3595688",
+                        "defaultRetentionPeriod": "6",
+                        "retentionPeriodUnits": "months",
+                        "securityPolicies": []
+                    },
+                    "properties": {
+                        "name": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_12e95c1d-bbbc-4edc-a131-619400ee88f6_name.json#name"
+                                },
+                                {
+                                    "caKeyClassName": "name",
+                                    "caKeyClassId": "44b9e2c3-0774-4205-9319-bea69aaf41b7",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Address": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_956ed890-6031-4071-b92f-cb9ee3e433d8_address.json#address"
+                                },
+                                {
+                                    "caKeyClassName": "Address",
+                                    "caKeyClassId": "f500744b-868b-45ab-b269-90a11f7e8876",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        "City": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_7698b38d-761c-4a00-80c4-3ffda643c7f5_city.json#city"
+                                },
+                                {
+                                    "caKeyClassName": "City",
+                                    "caKeyClassId": "8e0a9573-cc41-48fe-bb3d-e9051f1d558b",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        "State": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_5cb36cd1-832b-4ab3-902d-1ed3a56e2a92_State.json#State"
+                                },
+                                {
+                                    "caKeyClassName": "State",
+                                    "caKeyClassId": "99abecc2-736e-4901-b771-2b6cdfa3b341",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        "zipcode": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_05cc35e3-7d5a-4e18-9f76-cdd1bcfa0936_zip.json#zip"
+                                },
+                                {
+                                    "caKeyClassName": "zipcode",
+                                    "caKeyClassId": "c0aaebf4-74d3-439b-b2af-fe80219cf720",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string"
+                                    ]
+                                }
+                            ]
+                        },
+                        "emailAddress": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_d9edc7c5-74ab-412e-8eef-c6d7baee705c_email.json#email"
+                                },
+                                {
+                                    "caKeyClassName": "emailAddress",
+                                    "caKeyClassId": "ad10dc75-f188-4cb4-b62c-4f2962fec42c",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "PhoneNumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_c449f6d9-ef77-4bca-9bc3-2a3f00a6554f_phoneNumber.json#phoneNumber"
+                                },
+                                {
+                                    "caKeyClassName": "Phone Number",
+                                    "caKeyClassId": "172b6124-d552-4dc8-9e83-f8ce1aec0bce",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "organization": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_62770757-d8f6-46fd-9fc6-a9de842c6a4d_organization.json#organization"
+                                },
+                                {
+                                    "caKeyClassName": "organization",
+                                    "caKeyClassId": "24abeef3-af11-4e93-a4cf-ef47d5c52b49",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

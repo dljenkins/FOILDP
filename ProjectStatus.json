@@ -1,0 +1,28 @@
+{
+    "description": "Status of this project",
+    "CurrentTask": "DocumentTypes",
+    "OverallCompletion": 2,
+    "DocumentTypes": {
+        "status": 1,
+        "numberOfDocumentTypes": 2,
+        "averageNumberOfSamples": 20
+    },
+    "ClassificationModel": {
+        "status": 1,
+        "numberOfTypesTrained": 2,
+        "accuracy": 100
+    },
+    "DataExtraction": {
+        "status": 2,
+        "numberOfModels": 3,
+        "averageAccuracy": "85.00"
+    },
+    "Standardization": {
+        "status": 2,
+        "numberOfTypesReviewed": 1
+    },
+    "Policies": {
+        "status": 2,
+        "numberOfTypesReviewed": 2
+    }
+}
